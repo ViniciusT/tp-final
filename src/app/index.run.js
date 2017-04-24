@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('inspinia')
+    .module('tp-final')
     .run(runBlock);
 
   /** @ngInject */

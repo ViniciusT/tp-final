@@ -1,0 +1,42 @@
+<div class="logo-name">
+  <img style="width: 100px" src="../../assets/images/icone-principal.png"/>
+</div>
+
+<div class="middle-box text-center loginscreen animated fadeInDown" style="overflow: hidden;">
+
+  <div class="middle-box-container">
+    <h2 style="color: #222328; margin-bottom: 40px; font-size: 32px;">Login do Aluno</h2>
+
+    <form name="form" class="m-t" role="form">
+      <div class="row">
+        <div class="col-lg-12" style="margin-bottom: 26px; position: relative;">
+          <div class="input-title">Email</div>
+          <input name="login" ng-model="ctrl.user.username" type="email"
+                 class="input-field input-field-with-icon"
+                 placeholder="exemplo@test.com"
+                 style="padding-left: 37px !important; height: 42px;"
+                 required>
+          <i class="fa fa-envelope input-icon" aria-hidden="true"></i>
+        </div>
+
+        <div class="col-xs-6">
+          <div class="input-title">Senha</div>
+          <input name="password" ng-model="ctrl.user.password" type="password"
+                 class="input-field input-field-with-icon"
+                 placeholder="Senha"
+                 style="padding-left: 37px !important; height: 42px;"
+                 required>
+          <i class="fa fa-lock input-icon" aria-hidden="true" style="left: 30px;"></i>
+        </div>
+
+        <div class="col-xs-6" style="padding-bottom: 50px">
+          <button type="submit" style="margin-top: 27px; height: 42px;"
+                  class="btn btn-primary block full-width"
+                  ng-click="ctrl.auth()">
+            <span>Login</span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

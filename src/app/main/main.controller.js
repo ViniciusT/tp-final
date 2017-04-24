@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('inspinia')
+angular.module('tp-final')
   .controller('MainController', function () {
 
     var vm = this;

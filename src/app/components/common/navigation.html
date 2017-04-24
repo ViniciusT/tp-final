@@ -1,4 +1,4 @@
-<nav class="navbar-default navbar-static-side" role="navigation">
+<nav ng-controller="NavigationController" class="navbar-default navbar-static-side" role="navigation">
     <div class="sidebar-collapse">
         <ul side-navigation class="nav metismenu" id="side-menu">
             <li class="nav-header">
@@ -7,9 +7,8 @@
                     <a uib-dropdown-toggle="" href>
                             <span class="clear">
                                 <span class="block m-t-xs">
-                                    <strong class="font-bold">{{main.userName}}</strong>
+                                    <strong class="font-bold">Aluno Cabuloso<b class="caret"></b></strong>
                              </span>
-                                <span class="text-muted text-xs block">Example menu<b class="caret"></b></span>
                             </span>
                     </a>
                     <ul uib-dropdown-menu class="animated flipInX m-t-xs">
@@ -23,10 +22,10 @@
             </li>
 
             <li ui-sref-active="active">
-                <a ui-sref="index.main"><i class="fa fa-laptop"></i> <span class="nav-label">Main page</span> </a>
+                <a ui-sref="index.main"><i class="fa fa-laptop"></i> <span class="nav-label">Fazer Pedido</span> </a>
             </li>
             <li ui-sref-active="active">
-                <a ui-sref="index.minor"><i class="fa fa-desktop"></i> <span class="nav-label">Minor page</span></a>
+                <a ui-sref="index.minor"><i class="fa fa-desktop"></i> <span class="nav-label">Pedidos Pendentes</span></a>
             </li>
         </ul>
 

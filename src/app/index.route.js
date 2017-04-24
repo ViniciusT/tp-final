@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('inspinia')
+    .module('tp-final')
     .config(routerConfig);
 
   /** @ngInject */
@@ -13,6 +13,12 @@
         abstract: true,
         url: "/index",
         templateUrl: "app/components/common/content.html"
+      })
+      .state('login', {
+        url: "/login",
+        templateUrl: "app/auth/login.html",
+        controller: "LoginController",
+        controllerAs: 'ctrl'
       })
       .state('index.main', {
         url: "/main",
@@ -25,7 +31,7 @@
         data: { pageTitle: 'Example view' }
       });
 
-    $urlRouterProvider.otherwise('/index/main');
+    $urlRouterProvider.otherwise('/login');
   }
 
 })();
