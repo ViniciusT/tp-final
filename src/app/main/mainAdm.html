@@ -1,22 +1,35 @@
 <div class="wrapper wrapper-content animated fadeInRight">
-  <h2 style="text-align: center">Pedidos Recebidos</h2>
-  <ul  id="columms" class="row" style="padding-left:0;margin-top:20px;list-style: none">
-    <li  class="columms-class"  ng-repeat="i in ctrl.pedidos">
+  
+  <div class="text-center m-t-lg">
+    <h2> Pedidos Recebidos </h2>
+  </div>
+ 
+  <ul id="columms" class="row">
+    
+    <li class="columms-class"  ng-repeat="i in ctrl.pedidos">
+      
       <div id="lote-li-cliente" class="col-sm-2">
         {{i.name}}
       </div>
-      <div  class="col-sm-5 text-mosq-name">
+
+      <div class="col-sm-5 text-mosq-name">
         {{i.requerimento}}
       </div>
-      <div ui-sref="index.details" class="col-sm-3 align-text-lotes" style="text-decoration: underline;cursor: pointer; color:#0e6a36;">
+
+      <div id="detailsLink" ui-sref="index.details" class="col-sm-3 align-text-lotes">
         Detalhes
       </div>
-      <div   class="col-sm-1 text-mosq-name">
-        <i ng-click="ctrl.removeItem($index, 1)" data-toggle="tooltip" data-container="body" title="Aprovar Requisição" style="color: green;cursor: pointer" class="fa fa-check" aria-hidden="true"></i>
+
+      <div class="col-sm-1 text-mosq-name">
+        <i id="acceptRequest" ng-click="ctrl.removeItem($index, 1)" data-toggle="tooltip" data-container="body" title="Aprovar Requisição" class="fa fa-check" aria-hidden="true"></i>
       </div>
-      <div   class="col-sm-1 text-mosq-name">
-        <i ng-click="ctrl.removeItem($index, 2)" data-toggle="tooltip" data-container="body" title="Recusar Requisição" style="color: red;cursor: pointer" class="fa fa-times" aria-hidden="true"></i>
+
+      <div class="col-sm-1 text-mosq-name">
+        <i id="cancelRequest" ng-click="ctrl.removeItem($index, 2)" data-toggle="tooltip" data-container="body" title="Recusar Requisição" class="fa fa-times" aria-hidden="true"></i>
       </div>
+
     </li>
+
   </ul>
+
 </div>
