@@ -46,8 +46,14 @@
       })
       .state('index.pedidos', {
         url: "/pedidos",
-        templateUrl: "app/minor/pedidos.html",
+        templateUrl: "app/pedidos/pedidos.html",
         controller: "PedidosController",
+        controllerAs: 'ctrl'
+      })
+      .state('index.pedidosHist', {
+        url: "/pedidosHist",
+        templateUrl: "app/pedidos/pedidosHist.html",
+        controller: "PedidosHistController",
         controllerAs: 'ctrl'
       });
 

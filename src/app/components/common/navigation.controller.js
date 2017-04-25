@@ -8,14 +8,16 @@ angular.module('tp-final')
 
     var vm = this;
     console.log(localStorage.getItem('user'));
-    vm.primeiroEl = '';
-    vm.segundooEl = '';
+    vm.nome = '';
+
     vm.desapear = false;
     if(localStorage.getItem('user') === 'adm'){
       vm.desapear = true;
+      vm.nome = 'Adm Cabuloso'
     }
     else{
       vm.desapear = false;
+      vm.nome = 'Aluno Cabuloso'
     }
     vm.logout = function(){
       localStorage.clear();

@@ -7,7 +7,7 @@
                     <a uib-dropdown-toggle="" href>
                             <span class="clear">
                                 <span class="block m-t-xs">
-                                    <strong class="font-bold">Aluno Cabuloso<b class="caret"></b></strong>
+                                    <strong class="font-bold">{{ctrl.nome}}<b class="caret"></b></strong>
                              </span>
                             </span>
                     </a>
@@ -26,6 +26,9 @@
             <li ng-show="!ctrl.desapear" ui-sref-active="active">
                 <a ui-sref="index.pedidos"><i class="fa fa-file-text-o"></i> <span class="nav-label">Pedidos Pendentes</span></a>
             </li>
+          <li ng-show="!ctrl.desapear" ui-sref-active="active">
+            <a ui-sref="index.pedidosHist"><i class="fa fa-history"></i> <span class="nav-label">Histórico de Pedidos</span></a>
+          </li>
         </ul>
 
     </div>

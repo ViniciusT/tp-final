@@ -6,37 +6,37 @@
                     DETALHES DO REQUERIMENTO
                 </h2>
               <form name="form">
-                    <div class="col-lg-6" id="divLabel">
+                    <div class="col-lg-6 divLabel" >
                       <div class="input-title">Nome<span> *</span></div>
                       <input name="name" ng-model="name" type="text" class="input-field ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="Geraldo Vinicius Costa Milholo" required
                       aria-invalid="true" autocomplete="off" disabled readonly>
                     </div>
 
-                    <div class="col-lg-6" id="divLabel">
+                    <div class="col-lg-6 divLabel">
                       <div class="input-title">Email<span> *</span></div>
                       <input name="email" ng-model="email" type="email" class="input-field ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="geraldomilholo91@gmail.com" required
                       disabled readonly>
                     </div>
 
-                    <div class="col-lg-6" id="divLabel">
+                    <div class="col-lg-6 divLabel">
                       <div class="input-title">Telefone Residencial</div>
                       <input name="phone" ng-model="phone" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="(DDD) 9999-9999" aria-invalid="true" autocomplete="off" disabled readonly>
                     </div>
 
-                    <div class="col-lg-6" id="divLabel">
+                    <div class="col-lg-6 divLabel">
                       <div class="input-title">Telefone Celular</div>
-                      <input name="cellPhone" ng-model="cellPhone" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" 
+                      <input name="cellPhone" ng-model="cellPhone" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
                       placeholder="(31) 98508-1818" aria-invalid="true" autocomplete="off" disabled readonly>
                     </div>
 
-                    <div class="col-lg-12" id="divLabel">
+                    <div class="col-lg-12 divLabel">
                       <div class="input-title">Endereço<span> *</span></div>
-                      <input name="address" ng-model="address" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" 
+                      <input name="address" ng-model="address" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
                       placeholder="Rua Dom Oscar Romero, 97, apt 305" required aria-invalid="true" autocomplete="off"
                       disabled readonly>
                     </div>
 
-                    <div class="col-lg-3" id="divLabel">
+                    <div class="col-lg-3 divLabel">
                       <div class="input-title">Bairro<span> *</span></div>
                       <input name="neighborhood" ng-model="neighborhood" type="text"
                              class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
@@ -44,7 +44,7 @@
                              disabled readonly>
                     </div>
 
-                    <div class="col-lg-3" id="divLabel">
+                    <div class="col-lg-3 divLabel">
                       <div class="input-title">Cidade<span> *</span></div>
                       <input name="city" ng-model="city" type="text"
                              class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
@@ -52,7 +52,7 @@
                              disabled readonly>
                     </div>
 
-                    <div class="col-lg-3" id="divLabel">
+                    <div class="col-lg-3 divLabel">
                       <div class="input-title">UF<span> *</span></div>
                       <input name="uf" ng-model="uf" type="text"
                              class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
@@ -60,7 +60,7 @@
                              disabled readonly>
                     </div>
 
-                    <div class="col-lg-3" id="divLabel">
+                    <div class="col-lg-3 divLabel">
                       <div class="input-title">CEP<span> *</span></div>
                       <input name="cep" ng-model="cep" type="text"
                              class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
@@ -68,7 +68,7 @@
                              disabled readonly>
                     </div>
 
-                    <div class="col-lg-8" id="divLabel">
+                    <div class="col-lg-8 divLabel">
                       <div class="input-title">Curso<span> *</span></div>
                       <select class="form-control" name="course" required disabled>
                             <option>Engenharia da Computação</option>
@@ -78,7 +78,7 @@
                         </select>
                     </div>
 
-                    <div class="col-lg-4" id="divLabel">
+                    <div class="col-lg-4 divLabel">
                       <div class="input-title">Período<span> *</span></div>
                       <input name="period" ng-model="period" type="text" class="input-field ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="10" required aria-invalid="true" autocomplete="off" disabled readonly>
                     </div>
@@ -137,19 +137,29 @@
                            Dispensa do Estágio Curricular Obrigatório
                     </div>
 
-                    <div class="col-lg-12" id="divLabel">
+                    <div class="col-lg-12 divLabel">
                         <div class="input-title">Observações</div>
                         <textarea disabled readonly>Venho através desse solicitar o cancelamento da matrícula na matéria mecânica quântica I. Motivo: é muito difícil.
                         </textarea>
                     </div>
 
-                    <div class="col-lg-12" id="divLabel">
+                    <div class="col-lg-12 divLabel" >
                         <div class="input-title">Observações do Coordenador</div>
-                        <textarea>
+                        <textarea ng-if="ctrl.desapear">
+
+                        </textarea>
+                        <textarea ng-if="!ctrl.desapear" disabled readonly>
 
                         </textarea>
                     </div>
-                    
+                    <div ng-if="ctrl.desapear" class="col-lg-12 divLabel">
+                      <button  ui-sref="index.mainAdm"  class="btn btn-sm btn-primary pull-left m-t-n-xs" type="submit">
+                        <strong >Aceitar</strong>
+                      </button>
+                      <button  ui-sref="index.mainAdm"  class="btn btn-sm pull-right m-t-n-xs button-refuse" type="submit">
+                        <strong >Recusar</strong>
+                      </button>
+                    </div>
               </form>
             </div>
         </div>

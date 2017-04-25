@@ -1,0 +1,35 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+
+  <div class="text-center m-t-lg">
+    <h2> Histórico de Pedidos </h2>
+  </div>
+
+  <ul id="columms" class="row">
+
+    <li  class="columms-class"  ng-repeat="i in ctrl.pedidos">
+
+      <div id="lote-li-cliente" class="col-sm-2">
+        {{i.name}}
+      </div>
+
+      <div  class="col-sm-4 text-mosq-name">
+        {{i.requerimento}}
+      </div>
+      <div ng-class="i.status == 'Aceito'?'acceptedHist':'refusedHist'" class="col-sm-2 align-text-lotes">
+        {{i.status}}
+      </div>
+
+      <div id="detailsLink" ui-sref="index.details" class="col-sm-2 align-text-lotes">
+        Detalhes
+      </div>
+
+      <div class="col-sm-2 text-mosq-name">
+        <i id="cancelRequest" ng-click="ctrl.removeItem()" data-toggle="tooltip" data-container="body"
+        title="Remover do Histórico" class="fa fa-times" aria-hidden="true"></i>
+      </div>
+
+    </li>
+
+  </ul>
+
+</div>

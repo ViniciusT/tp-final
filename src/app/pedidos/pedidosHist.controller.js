@@ -1,34 +1,34 @@
 'use strict';
 
 angular.module('tp-final')
-  .controller('PedidosController', function ($scope) {
+  .controller('PedidosHistController', function ($scope) {
 
     var vm = this;
 
     vm.pedidos = [
       {
         name: 'Vinicius1',
-        matricula: '2012/2',
-        requerimento: 'Cancelamento de matricula'
+        status:'Aceito',
+        requerimento: 'Cancelamento de matricula',
       },
       {
         name: 'Vinicius2',
-        matricula: '2012/2',
+        status:'Negado',
         requerimento: 'Cancelamento de matricula'
       },
       {
         name: 'Vinicius3',
-        matricula: '2012/2',
+        status:'Negado',
         requerimento: 'Cancelamento de matricula'
       },
       {
         name: 'Vinicius4',
-        matricula: '2012/2',
+        status:'Aceito',
         requerimento: 'Cancelamento de matricula'
       },
       {
         name: 'Vinicius5',
-        matricula: '2012/2',
+        status:'Aceito',
         requerimento: 'Cancelamento de matricula'
       }
 
@@ -37,7 +37,7 @@ angular.module('tp-final')
       vm.removeItem = function(index){
         swal({
             title: "Tem certeza?",
-            text: "Esse pedido será removido automaticamente!",
+            text: "Esse pedido será removido do histórico automaticamente!",
             type: "warning",
             showCancelButton: true,
             confirmButtonColor: "#DD6B55",
@@ -50,6 +50,5 @@ angular.module('tp-final')
             });
             swal("", "Pedido removido com sucesso.", "success");
           });
-
       };
   });
