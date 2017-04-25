@@ -1,0 +1,19 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+  <h2 style="text-align: center">Pedidos Pendentes</h2>
+  <ul  id="columms" class="row" style="padding-left:0;margin-top:20px;list-style: none">
+    <li  class="columms-class"  ng-repeat="i in ctrl.pedidos">
+      <div id="lote-li-cliente" class="col-sm-2">
+        {{i.name}}
+      </div>
+      <div   class="col-sm-3 text-mosq-name">
+        {{i.matricula}}
+      </div>
+      <div  class="col-sm-5 text-mosq-name">
+        {{i.requerimento}}
+      </div>
+      <div class="col-sm-2 align-text-lotes" style="text-decoration: underline; color:#0e6a36;">
+        Detalhes
+      </div>
+    </li>
+  </ul>
+</div>

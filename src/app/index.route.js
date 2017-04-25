@@ -20,6 +20,12 @@
         controller: "LoginController",
         controllerAs: 'ctrl'
       })
+      .state('loginAdm', {
+        url: "/loginAdm",
+        templateUrl: "app/auth/loginAdm.html",
+        controller: "LoginAdmController",
+        controllerAs: 'ctrl'
+      })
       .state('index.main', {
         url: "/main",
         templateUrl: "app/main/main.html",
@@ -27,8 +33,9 @@
       })
       .state('index.minor', {
         url: "/minor",
-        templateUrl: "app/minor/minor.html",
-        data: { pageTitle: 'Example view' }
+        templateUrl: "app/minor/pedidos.html",
+        controller: "PedidosController",
+        controllerAs: 'ctrl'
       });
 
     $urlRouterProvider.otherwise('/login');
