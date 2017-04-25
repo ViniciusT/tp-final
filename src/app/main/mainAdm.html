@@ -8,14 +8,14 @@
       <div  class="col-sm-5 text-mosq-name">
         {{i.requerimento}}
       </div>
-      <div class="col-sm-3 align-text-lotes" style="text-decoration: underline;cursor: pointer; color:#0e6a36;">
+      <div ui-sref="index.details" class="col-sm-3 align-text-lotes" style="text-decoration: underline;cursor: pointer; color:#0e6a36;">
         Detalhes
       </div>
       <div   class="col-sm-1 text-mosq-name">
-        <i ng-click="" data-toggle="tooltip" data-container="body" title="Aprovar Requisição" style="color: green;cursor: pointer" class="fa fa-check" aria-hidden="true"></i>
+        <i ng-click="ctrl.removeItem($index, 1)" data-toggle="tooltip" data-container="body" title="Aprovar Requisição" style="color: green;cursor: pointer" class="fa fa-check" aria-hidden="true"></i>
       </div>
       <div   class="col-sm-1 text-mosq-name">
-        <i ng-click="" data-toggle="tooltip" data-container="body" title="Recusar Requisição" style="color: red;cursor: pointer" class="fa fa-times" aria-hidden="true"></i>
+        <i ng-click="ctrl.removeItem($index, 2)" data-toggle="tooltip" data-container="body" title="Recusar Requisição" style="color: red;cursor: pointer" class="fa fa-times" aria-hidden="true"></i>
       </div>
     </li>
   </ul>

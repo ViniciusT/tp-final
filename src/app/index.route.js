@@ -38,6 +38,12 @@
         controller:"MainAdmController",
         controllerAs: 'ctrl'
       })
+      .state('index.details', {
+        url: "/details",
+        templateUrl: "app/details/details.html",
+        controller: "DetailsController",
+        controllerAs: 'ctrl'
+      })
       .state('index.pedidos', {
         url: "/pedidos",
         templateUrl: "app/minor/pedidos.html",

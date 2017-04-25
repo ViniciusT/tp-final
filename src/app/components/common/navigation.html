@@ -15,19 +15,16 @@
                         <li ng-click="ctrl.logout()"><a href="">Log out</a></li>
                     </ul>
                 </div>
-                <div class="logo-element">
-
-                </div>
 
             </li>
             <li ng-if="ctrl.desapear" ui-sref-active="active">
-              <a ui-sref="index.mainAdm"><i class="fa fa-laptop"></i> <span class="nav-label">Pedidos Recebidos</span> </a>
+              <a ui-sref="index.mainAdm"><i class="fa fa-file-text-o"></i> <span class="nav-label">Pedidos Recebidos</span> </a>
             </li>
             <li ng-if="!ctrl.desapear" ui-sref-active="active">
-                <a ui-sref="index.main"><i class="fa fa-laptop"></i> <span class="nav-label">Fazer Pedido</span> </a>
+                <a ui-sref="index.main"><i class="fa fa-file-o"></i> <span class="nav-label">Fazer Pedido</span> </a>
             </li>
             <li ng-show="!ctrl.desapear" ui-sref-active="active">
-                <a ui-sref="index.pedidos"><i class="fa fa-desktop"></i> <span class="nav-label">Pedidos Pendentes</span></a>
+                <a ui-sref="index.pedidos"><i class="fa fa-file-text-o"></i> <span class="nav-label">Pedidos Pendentes</span></a>
             </li>
         </ul>
 

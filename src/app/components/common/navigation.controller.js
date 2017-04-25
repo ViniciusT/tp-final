@@ -20,9 +20,11 @@ angular.module('tp-final')
     vm.logout = function(){
       localStorage.clear();
       if(vm.desapear === true){
+        swal("", "Deslogado com sucesso!", "success");
         $state.go('loginAdm');
       }
       else{
+        swal("", "Deslogado com sucesso!", "success");
         $state.go('login');
       }
 
