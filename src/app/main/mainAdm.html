@@ -1,5 +1,5 @@
 <div class="wrapper wrapper-content animated fadeInRight">
-  <h2 style="text-align: center">Pedidos Pendentes</h2>
+  <h2 style="text-align: center">Pedidos Recebidos</h2>
   <ul  id="columms" class="row" style="padding-left:0;margin-top:20px;list-style: none">
     <li  class="columms-class"  ng-repeat="i in ctrl.pedidos">
       <div id="lote-li-cliente" class="col-sm-2">
@@ -11,8 +11,11 @@
       <div class="col-sm-3 align-text-lotes" style="text-decoration: underline;cursor: pointer; color:#0e6a36;">
         Detalhes
       </div>
-      <div   class="col-sm-2 text-mosq-name">
-        <i data-toggle="tooltip" data-container="body" title="Cancelar Pedido" style="color: red;cursor: pointer" class="fa fa-times" aria-hidden="true"></i>
+      <div   class="col-sm-1 text-mosq-name">
+        <i ng-click="" data-toggle="tooltip" data-container="body" title="Aprovar Requisição" style="color: green;cursor: pointer" class="fa fa-check" aria-hidden="true"></i>
+      </div>
+      <div   class="col-sm-1 text-mosq-name">
+        <i ng-click="" data-toggle="tooltip" data-container="body" title="Recusar Requisição" style="color: red;cursor: pointer" class="fa fa-times" aria-hidden="true"></i>
       </div>
     </li>
   </ul>

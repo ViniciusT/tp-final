@@ -29,10 +29,17 @@
       .state('index.main', {
         url: "/main",
         templateUrl: "app/main/main.html",
-        data: { pageTitle: 'Example view' }
+        controller:"MainController",
+        controllerAs: 'ctrl'
       })
-      .state('index.minor', {
-        url: "/minor",
+      .state('index.mainAdm', {
+        url: "/mainAdm",
+        templateUrl: "app/main/mainAdm.html",
+        controller:"MainAdmController",
+        controllerAs: 'ctrl'
+      })
+      .state('index.pedidos', {
+        url: "/pedidos",
         templateUrl: "app/minor/pedidos.html",
         controller: "PedidosController",
         controllerAs: 'ctrl'

@@ -4,12 +4,9 @@
 'use strict';
 
 angular.module('tp-final')
-  .controller('NavigationController', function ($state) {
+  .controller('TopNavController', function ($state) {
 
     var vm = this;
-    console.log(localStorage.getItem('user'));
-    vm.primeiroEl = '';
-    vm.segundooEl = '';
     vm.desapear = false;
     if(localStorage.getItem('user') === 'adm'){
       vm.desapear = true;

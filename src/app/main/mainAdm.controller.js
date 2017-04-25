@@ -1,10 +1,9 @@
 'use strict';
 
 angular.module('tp-final')
-  .controller('PedidosController', function () {
+  .controller('MainAdmController', function () {
 
     var vm = this;
-
     vm.pedidos = [
       {
         name: 'Vinicius',
