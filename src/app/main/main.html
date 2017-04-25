@@ -3,12 +3,136 @@
         <div class="col-lg-12">
             <div class="text-center m-t-lg">
                 <h1>
-                    {{main.helloText}}
+                    REQUERIMENTO DO ALUNO – SOLICITAÇÃO ÚNICA
                 </h1>
                 <small>
-                    {{main.descriptionText}}
+                    <div class="col-lg-6" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Nome</div>
+                      <input name="name" ng-model="name" type="text" class="input-field ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="Nome completo" required 
+                      aria-invalid="true" autocomplete="off">
+                    </div>
 
-                    <i class="glyphicon glyphicon-pencil"></i>
+                    <div class="col-lg-6" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Email</div>
+                      <input name="email" ng-model="email" type="email" class="input-field ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="email@email.com" required>
+                    </div>
+
+                    <div class="col-lg-6" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Telefone Recidencial</div>
+                      <input name="phone" ng-model="phone" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="(DDD) 9999-9999" aria-invalid="true" autocomplete="off">
+                    </div>
+
+                    <div class="col-lg-6" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Telefone Celular</div>
+                      <input name="cellPhone" ng-model="cellPhone" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="(DDD) 99999-9999" aria-invalid="true" autocomplete="off">
+                    </div>
+
+                    <div class="col-lg-12" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Endereço</div>
+                      <input name="address" ng-model="address" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="Endereço completo" required aria-invalid="true" autocomplete="off">
+                    </div>
+
+                    <div class="col-lg-3" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Bairro</div>
+                      <input name="neighborhood" ng-model="neighborhood" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="Bairro" required aria-invalid="true" autocomplete="off">
+                    </div>
+
+                    <div class="col-lg-3" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Cidade</div>
+                      <input name="city" ng-model="city" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="Cidade" required aria-invalid="true" autocomplete="off">
+                    </div>
+
+                    <div class="col-lg-3" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">UF</div>
+                      <input name="uf" ng-model="uf" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="UF" required aria-invalid="true" autocomplete="off">
+                    </div>
+
+                    <div class="col-lg-3" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">CEP</div>
+                      <input name="cep" ng-model="cep" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="CEP" required aria-invalid="true" autocomplete="off">
+                    </div>
+
+                    <div class="col-lg-8" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Curso</div>
+                      <select class="form-control" name="course" required>
+                            <option>Engenharia da Computação</option>
+                            <option>Engenharia da Elétrica</option>
+                            <option>Administração</option>
+                            <option>Letras</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-4" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Período</div>
+                      <input name="period" ng-model="period" type="text" class="input-field ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="Período" required aria-invalid="true" autocomplete="off">
+                    </div>
+                    
+                    <div class="text-left m-t-lg">
+                        <div class="col-lg-12" style="margin-bottom: 26px; position: relative;">
+                          <h3> 
+                            Venho requerer à Coordenação do curso, segundo as Normas Acadêmicas da Educação a seguinte solicitação:
+                          </h3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" style="margin-bottom: 26px; position: relative;">
+                        <input class="input-field" name="segundaChamada" type="radio" value="segundaChamada">  
+                            Segunda Chamada de Prova Ministrada
+                    </div>
+
+                    <div class="col-lg-4" style="margin-bottom: 26px; position: relative;">
+                        <input class="input-field" name="revisao" type="radio" value="revisao">  
+                            Revisão de Prova e Nota
+                    </div>
+
+                    <div class="col-lg-4" style="margin-bottom: 26px; position: relative;">
+                        <input class="input-field" name="preRequisito" type="radio" value="preRequisito">  
+                            Quebra de Pré-Requisito                                              
+                    </div>
+
+                    <div class="col-lg-4" style="margin-bottom: 26px; position: relative;">
+                        <input class="input-field" name="coRequisito" type="radio" value="coRequisito">  
+                            Quebra de Co-Requisito
+                    </div>
+
+                    <div class="col-lg-4" style="margin-bottom: 26px; position: relative;">
+                        <input class="input-field" name="dispensaDisciplina" type="radio" value="dispensaDisciplina">  
+                            Dispensa de Disciplina
+                    </div>
+
+                    <div class="col-lg-4" style="margin-bottom: 26px; position: relative;">
+                        <input class="input-field" name="matriculaMateria" type="radio" value="matriculaMateria">  
+                            Matrícula em Matéria(s)                                            
+                    </div>
+
+                    <div class="col-lg-4" style="margin-bottom: 26px; position: relative;">
+                        <input class="input-field" name="trancamento" type="radio" value="trancamento">  
+                            Trancamento de Matrícula
+                    </div>
+
+                     <div class="col-lg-4" style="margin-bottom: 26px; position: relative;">
+                        <input class="input-field" name="trancamentoTotal" type="radio" value="trancamentoTotal">  
+                            Trancamento de Matrícula Total                                          
+                    </div>
+
+                    <div class="col-lg-4" style="margin-bottom: 26px; position: relative;">
+                        <input class="input-field" name="dispensaEstagio" type="radio" value="dispensaEstagio">  
+                            Dispensa do Estágio Curricular Obrigatório                     
+                    </div>
+                    
+                    <div class="col-lg-12" style="margin-bottom: 26px; position: relative;">
+                        <div class="input-title">Período</div>
+                        <textarea rows="20" cols="173">
+                            Justificativa de acordo com a solicitação requerida e assinalada acima. 
+                        </textarea>
+                    </div>
+
+                    <div class="col-lg-12" style="margin-bottom: 26px; position: relative;">
+                        <button class="btn btn-sm btn-primary pull-left m-t-n-xs" type="submit">
+                            <strong>Enviar</strong>
+                        </button>
+                    </div>
+
                 </small>
             </div>
         </div>
