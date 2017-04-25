@@ -1,84 +1,157 @@
 <div class="wrapper wrapper-content animated fadeInRight">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="text-center m-t-lg">
-        <h2>
-          Detalhes
-        </h2>
-        <div style="text-align: left">
-          <div class="col-lg-6" style="margin-bottom: 26px; position: relative;">
-            <div class="input-title">Nome<span style="color: red">*</span></div>
-            Vinicius
-          </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="text-center m-t-lg">
+                <h2>
+                    DETALHES DO REQUERIMENTO
+                </h2>
+              <form name="form">
+                    <div class="col-lg-6" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Nome<span style="color: red"> *</span></div>
+                      <input name="name" ng-model="name" type="text" class="input-field ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="Geraldo Vinicius Costa Milholo" required
+                      aria-invalid="true" autocomplete="off" disabled readonly>
+                    </div>
 
-          <div class="col-lg-6" style="margin-bottom: 26px; position: relative;">
-            <div class="input-title">Email<span style="color: red">*</span></div>
-            vinicius@cefet.com
-          </div>
+                    <div class="col-lg-6" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Email<span style="color: red"> *</span></div>
+                      <input name="email" ng-model="email" type="email" class="input-field ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="geraldomilholo91@gmail.com" required
+                      disabled readonly>
+                    </div>
 
-          <div class="col-lg-6" style="margin-bottom: 26px; position: relative;">
-            <div class="input-title">Telefone Residencial</div>
-            3123123123
-          </div>
+                    <div class="col-lg-6" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Telefone Residencial</div>
+                      <input name="phone" ng-model="phone" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="(DDD) 9999-9999" aria-invalid="true" autocomplete="off" disabled readonly>
+                    </div>
 
-          <div class="col-lg-6" style="margin-bottom: 26px; position: relative;">
-            <div class="input-title">Telefone Celular</div>
-            312312313
-          </div>
+                    <div class="col-lg-6" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Telefone Celular</div>
+                      <input name="cellPhone" ng-model="cellPhone" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" 
+                      placeholder="(31) 98508-1818" aria-invalid="true" autocomplete="off" disabled readonly>
+                    </div>
 
-          <div class="col-lg-12" style="margin-bottom: 26px; position: relative;">
-            <div class="input-title">Endereço<span style="color: red">*</span></div>
-            Rua da rua
-          </div>
+                    <div class="col-lg-12" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Endereço<span style="color: red"> *</span></div>
+                      <input name="address" ng-model="address" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" 
+                      placeholder="Rua Dom Oscar Romero, 97, apt 305" required aria-invalid="true" autocomplete="off"
+                      disabled readonly>
+                    </div>
 
-          <div class="col-lg-3" style="margin-bottom: 26px; position: relative;">
-            <div class="input-title">Bairro<span style="color: red">*</span></div>
-            Du bom
-          </div>
+                    <div class="col-lg-3" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Bairro<span style="color: red"> *</span></div>
+                      <input name="neighborhood" ng-model="neighborhood" type="text"
+                             class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
+                             placeholder="Nova Gameleira" required aria-invalid="true" autocomplete="off"
+                             disabled readonly>
+                    </div>
 
-          <div class="col-lg-3" style="margin-bottom: 26px; position: relative;">
-            <div class="input-title">Cidade<span style="color: red">*</span></div>
-            Belzonte
-          </div>
+                    <div class="col-lg-3" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Cidade<span style="color: red"> *</span></div>
+                      <input name="city" ng-model="city" type="text"
+                             class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
+                             placeholder="Belo Horizonte" required aria-invalid="true" autocomplete="off"
+                             disabled readonly>
+                    </div>
 
-          <div class="col-lg-3" style="margin-bottom: 26px; position: relative;">
-            <div class="input-title">UF<span style="color: red">*</span></div>
-            MG
-          </div>
+                    <div class="col-lg-3" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">UF<span style="color: red"> *</span></div>
+                      <input name="uf" ng-model="uf" type="text"
+                             class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
+                             placeholder="MG" required aria-invalid="true" autocomplete="off"
+                             disabled readonly>
+                    </div>
 
-          <div class="col-lg-3" style="margin-bottom: 26px; position: relative;">
-            <div class="input-title">CEP<span style="color: red">*</span></div>
-            30123452
-          </div>
+                    <div class="col-lg-3" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">CEP<span style="color: red"> *</span></div>
+                      <input name="cep" ng-model="cep" type="text"
+                             class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
+                             placeholder="30510-080" required aria-invalid="true" autocomplete="off"
+                             disabled readonly>
+                    </div>
 
-          <div class="col-lg-8" style="margin-bottom: 26px; position: relative;">
-            <div class="input-title">Curso<span style="color: red">*</span></div>
-            Engenharia de Computação
-          </div>
+                    <div class="col-lg-8" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Curso<span style="color: red"> *</span></div>
+                      <select class="form-control" name="course" required disabled>
+                            <option>Engenharia da Computação</option>
+                            <option>Engenharia da Elétrica</option>
+                            <option>Administração</option>
+                            <option>Letras</option>
+                        </select>
+                    </div>
 
-          <div class="col-lg-4" style="margin-bottom: 26px; position: relative;">
-            <div class="input-title">Período<span style="color: red">*</span></div>
-            Sexto
-          </div>
-          <div class="col-lg-12" style="margin-bottom: 26px; position: relative;">
-            <div class="input-title">Tipo da requisição<span style="color: red">*</span></div>
-            Revisão de Prova e Nota
-          </div>
-          <div class="col-lg-12" style="margin-bottom: 26px; position: relative;">
-            <div class="input-title">Observações</div>
-            texto do texto que era pra ter aqui
-          </div>
+                    <div class="col-lg-4" style="margin-bottom: 26px; position: relative;">
+                      <div class="input-title">Período<span style="color: red"> *</span></div>
+                      <input name="period" ng-model="period" type="text" class="input-field ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="10" required aria-invalid="true" autocomplete="off" disabled readonly>
+                    </div>
 
-          <div ng-if="ctrl.desapear" class="col-lg-12" style="margin-bottom: 26px; position: relative;">
-            <button  ui-sref="index.mainAdm" class="btn btn-sm btn-primary pull-left m-t-n-xs" type="submit">
-              <strong>Aceitar</strong>
-            </button>
-            <button  ui-sref="index.mainAdm" style="background-color:red;" class="btn btn-sm  pull-right m-t-n-xs" type="submit">
-              <strong>Recusar</strong>
-            </button>
-          </div>
+                    <div class="text-left m-t-lg">
+                        <div class="col-lg-12" style="margin-bottom: 26px; position: relative;">
+                          <h3>
+                            Venho requerer à Coordenação do curso, segundo as Normas Acadêmicas da Educação a seguinte solicitação:
+                            <span style="color: red"> *</span>
+                          </h3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 class-check-form" >
+                        <input  name="solicitacao" id="segundaChamada" type="radio" value="segundaChamada" disabled>
+                            Segunda Chamada de Prova Ministrada
+                    </div>
+
+                    <div class="col-lg-4 class-check-form" >
+                        <input  name="solicitacao" id="revisao" type="radio" value="revisao" disabled>
+                            Revisão de Prova e Nota
+                    </div>
+
+                    <div  class="col-lg-4 class-check-form" >
+                        <input  name="solicitacao" id="preRequisito" type="radio" value="preRequisito" disabled>
+                            Quebra de Pré-Requisito
+                    </div>
+
+                    <div  class="col-lg-4 class-check-form" >
+                        <input name="solicitacao" id="coRequisito" type="radio" value="coRequisito" disabled>
+                            Quebra de Co-Requisito
+                    </div>
+
+                    <div class="col-lg-4 class-check-form">
+                        <input name="solicitacao" id="dispensaDisciplina" type="radio" value="dispensaDisciplina" disabled>
+                            Dispensa de Disciplina
+                    </div>
+
+                    <div  class="col-lg-4 class-check-form">
+                        <input name="solicitacao" id="matriculaMateria" type="radio" value="matriculaMateria" disabled>
+                            Matrícula em Matéria(s)
+                    </div>
+
+                    <div  class="col-lg-4 class-check-form">
+                        <input name="solicitacao" id="trancamento" type="radio" value="trancamento" checked>
+                            Cancelamento de Matrícula
+                    </div>
+
+                     <div  class="col-lg-4 class-check-form">
+                        <input name="solicitacao" id="trancamentoTotal" type="radio" value="trancamentoTotal" disabled>
+                            Trancamento de Matrícula Total
+                    </div>
+
+                    <div  class="col-lg-4 class-check-form">
+                        <input name="solicitacao" id="dispensaEstagio" type="radio" value="dispensaEstagio" disabled>
+                           Dispensa do Estágio Curricular Obrigatório
+                    </div>
+
+                    <div class="col-lg-12" style="margin-bottom: 26px; position: relative;">
+                        <div class="input-title">Observações</div>
+                        <textarea style="width: 100%; height: 150px" disabled readonly>Venho através desse solicitar o cancelamento da matrícula na matéria mecânica quântica I. Motivo: é muito difícil.
+                        </textarea>
+                    </div>
+
+                    <div class="col-lg-12" style="margin-bottom: 26px; position: relative;">
+                        <div class="input-title">Observações do Coordenador</div>
+                        <textarea style="width: 100%; height: 150px"   >
+
+                        </textarea>
+                    </div>
+                    
+              </form>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
