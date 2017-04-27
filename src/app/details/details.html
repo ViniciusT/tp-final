@@ -153,10 +153,10 @@
                         </textarea>
                     </div>
                     <div ng-if="ctrl.desapear" class="col-lg-12 divLabel">
-                      <button  ui-sref="index.mainAdm"  class="btn btn-sm btn-primary pull-left m-t-n-xs" type="submit">
+                      <button  ng-click="ctrl.changeRoute(1)"  class="btn btn-sm btn-primary pull-left m-t-n-xs" type="submit">
                         <strong >Aceitar</strong>
                       </button>
-                      <button  ui-sref="index.mainAdm"  class="btn btn-sm pull-right m-t-n-xs button-refuse" type="submit">
+                      <button ng-click="ctrl.changeRoute(2)"    class="btn btn-sm pull-right m-t-n-xs button-refuse" type="submit">
                         <strong >Recusar</strong>
                       </button>
                     </div>

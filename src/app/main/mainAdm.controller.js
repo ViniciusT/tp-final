@@ -62,7 +62,6 @@ angular.module('tp-final')
             closeOnConfirm: false
           },
           function(){
-            console.log('veio');
             $scope.$apply(function () {
               vm.pedidos.splice(index, 1);
             });
