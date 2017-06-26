@@ -20,8 +20,27 @@ angular.module('tp-final')
     };
 
     vm.auth = function () {
-        localStorage.setItem("user", "adm");
-        $state.go('index.mainAdm');
+
+      localStorage.setItem("user", 'adm');
+      $state.go('index.mainAdm');
+
+      // $.ajax({
+      //   url: 'http://localhost:4200/users/Angelo',
+      //   type: 'GET',
+      //   cors: true
+      // }).done((user) => {
+         
+      //   localStorage.setItem("user", 'adm');
+      //   $state.go('index.mainAdm');
+
+      // }).fail((err) => {
+      //   console.log(err)
+      // });
+
+    }
+
+    vm.aluno = function () {
+      $state.go('login');
     }
 
   });

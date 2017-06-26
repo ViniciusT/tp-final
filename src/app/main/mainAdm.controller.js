@@ -28,13 +28,17 @@ angular.module('tp-final')
       {
         name: 'Vinicius5',
         matricula: '2012/2',
-        requerimento: 'Cancelamento de matricula'
+        requerimento: 'Matricula Bla'
       }
 
     ];
+
     vm.removeItem = function(index , option){
-      if(option === 2){
+      
+      if (option === 2) {
+
         swal({
+            
             title: "Tem certeza?",
             text: "Esse pedido será recusado automaticamente!",
             type: "warning",
@@ -44,14 +48,17 @@ angular.module('tp-final')
             closeOnConfirm: false
           },
           function(){
+            
             $scope.$apply(function () {
               vm.pedidos.splice(index, 1);
             });
+            
             swal("", "Pedido recusado com sucesso.", "success");
 
           });
-      }
-      else{
+
+      } else {
+        
         swal({
             title: "Tem certeza?",
             text: "Esse pedido será aceito automaticamente!",
@@ -67,8 +74,8 @@ angular.module('tp-final')
             });
             swal("", "Pedido aceito com sucesso.", "success");
           });
+      
       }
-
 
     };
   });

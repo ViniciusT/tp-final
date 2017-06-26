@@ -6,10 +6,17 @@
                     DETALHES DO REQUERIMENTO
                 </h2>
               <form name="form">
+
                     <div class="col-lg-6 divLabel" >
                       <div class="input-title">Nome<span> *</span></div>
                       <input name="name" ng-model="name" type="text" class="input-field ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="Geraldo Vinicius Costa Milholo" required
                       aria-invalid="true" autocomplete="off" disabled readonly>
+                    </div>
+                    
+                    <div class="col-lg-6 divLabel" >
+                      <div class="input-title">Matrícula<span> *</span></div>
+                      <input name="matricula" ng-model="matricula" type="text" class="input-field ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="201222040441" required
+                      aria-invalid="true" autocomplete="off">
                     </div>
 
                     <div class="col-lg-6 divLabel">
@@ -18,12 +25,12 @@
                       disabled readonly>
                     </div>
 
-                    <div class="col-lg-6 divLabel">
+                    <div class="col-lg-3 divLabel">
                       <div class="input-title">Telefone Residencial</div>
                       <input name="phone" ng-model="phone" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" placeholder="(DDD) 9999-9999" aria-invalid="true" autocomplete="off" disabled readonly>
                     </div>
 
-                    <div class="col-lg-6 divLabel">
+                    <div class="col-lg-3 divLabel">
                       <div class="input-title">Telefone Celular</div>
                       <input name="cellPhone" ng-model="cellPhone" type="text" class="input-field input-field-with-icon ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
                       placeholder="(31) 98508-1818" aria-invalid="true" autocomplete="off" disabled readonly>

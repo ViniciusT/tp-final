@@ -8,26 +8,31 @@ angular.module('tp-final')
     vm.pedidos = [
       {
         name: 'Vinicius1',
+        matricula: 201222040441,
         status:'Pendente',
         requerimento: 'Cancelamento de matricula',
       },
       {
         name: 'Vinicius2',
+        matricula: 201222040441,
         status:'Pendente',
         requerimento: 'Cancelamento de matricula'
       },
       {
         name: 'Vinicius3',
+        matricula: 201222040441,
         status:'Pendente',
         requerimento: 'Cancelamento de matricula'
       },
       {
         name: 'Vinicius4',
+        matricula: 201222040441,
         status:'Pendente',
         requerimento: 'Cancelamento de matricula'
       },
       {
         name: 'Vinicius5',
+        matricula: 201222040441,
         status:'Pendente',
         requerimento: 'Cancelamento de matricula'
       }

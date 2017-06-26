@@ -12,11 +12,12 @@
         {{i.name}}
       </div>
 
+      <div id="lote-li-cliente" class="col-sm-2">
+        {{i.matricula}}
+      </div>
+
       <div  class="col-sm-4 text-mosq-name">
         {{i.requerimento}}
-      </div>
-      <div   class="col-sm-2 align-text-lotes waitingReq">
-        {{i.status}}
       </div>
 
       <div id="detailsLink" ui-sref="index.details" class="col-sm-2 align-text-lotes">
@@ -24,8 +25,7 @@
       </div>
 
       <div class="col-sm-2 text-mosq-name">
-        <i id="cancelRequest" ng-click="ctrl.removeItem()" data-toggle="tooltip" data-container="body"
-        title="Cancelar Pedido" class="fa fa-times" aria-hidden="true"></i>
+        <i id="cancelRequest" ng-click="ctrl.removeItem()" title="Cancelar Pedido" class="fa fa-times" aria-hidden="true"></i>
       </div>
 
     </li>
